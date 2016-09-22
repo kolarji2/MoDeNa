@@ -9,7 +9,8 @@
 //    binary_stl >>> "filename.stl"
 
 // Programmer: Ken Brakke, brakke@susqu.edu, http://www.susqu.edu/brakke
-
+// Edited by Jiri Kolar
+// points moved by one
 /******************************************************************************************/
 
 stl_checks := { 
@@ -74,7 +75,7 @@ binary_stl := {
   { fnormal := ff.facet_normal/ff.area;
     binary_printf "%f%f%f",fnormal[1],fnormal[2],fnormal[3];
     foreach ff vertex vv do
-      binary_printf "%f%f%f",vv.x,vv.y,vv.z;
+      binary_printf "%f%f%f",vv.x+1,vv.y+1,vv.z+1;
     binary_printf "%d",0; // attribute byte count
 
   };
@@ -95,8 +96,8 @@ stl := {
      printf "facet normal %f %f %f\n",ff.x/mag,ff.y/mag,ff.z/mag;
      printf "   outer loop\n";
      for ( inx := 1 ; inx <= 3 ; inx += 1 )
-       printf "     vertex %f %f %f\n",ff.vertex[inx].x,ff.vertex[inx].y,
-             ff.vertex[inx].z;
+       printf "     vertex %f %f %f\n",ff.vertex[inx].x+1,ff.vertex[inx].y+1,
+             ff.vertex[inx].z+1;
      printf "   endloop\n";
      printf "  endfacet\n";
    };

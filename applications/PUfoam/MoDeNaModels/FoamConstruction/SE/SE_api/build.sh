@@ -1,6 +1,7 @@
 #!/bin/sh
-cd src
+cmake .
 make
-cd ../
-./se_api PeriodicRVE.geo PeriodicRVE.fe PeriodicRVE.cmd
+#./SE_api -g random -n 9 -p foam.gnu
+#
+#./SE_api -i PeriodicRVE.geo -o PeriodicRVE.fe
 #evolver -f PeriodicRVE.cmd PeriodicRVE.fe

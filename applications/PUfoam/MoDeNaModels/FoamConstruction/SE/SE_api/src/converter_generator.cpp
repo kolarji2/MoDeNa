@@ -1,4 +1,5 @@
 #include "converter.hpp"
+#include "voro++.hh"
 
 using namespace std;
 using namespace voro;
