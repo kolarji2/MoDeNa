@@ -13,12 +13,12 @@ If that doesn't work, you will need to download it from
 http://math.lbl.gov/voro++/download/ and install it manually.
 
 ##build
-cmake .
-make
+	cmake .
+	make
 
 ##run
-main -i PeriodicRVE.geo
-main -g cubic
+	main -i PeriodicRVE.geo
+	main -g cubic
 
 ##Description
 	-i input.geo
