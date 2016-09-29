@@ -1,8 +1,18 @@
+Surface evolver api
+============================
+## Installation
+The code depends on third-party applications:
+- `voro++` for tessellation
+
+
+To install `voro++`:
+```
+sudo ./install_voro++.sh
+```
+If that doesn't work, you will need to download it from
+http://math.lbl.gov/voro++/download/ and install it manually.
 
 ##build
-cd voro++-0.4.6
-make
-cd ../
 cmake .
 make
 
